@@ -1,44 +1,62 @@
 Die Kevin;
-Die Cameron;
 void setup()
 {
 	size(500,500);
 	noLoop();
-	
+
 }
 void draw()
-{ Kevin = new Die(100,100);
-	Cameron = new Die (200,100);
-	Kevin.show();
-	Cameron.show();
-	
+{ 
+	for ( int y = 100; y<=390; y+=130)
+	{
+		for (int x = 100; x<= 390; x+=130)
+     {
+     	Kevin = new Die(x,y);
+     	Kevin.show();
+     	Kevin.roll();
+     }
 	}
+	}
+	
 void mousePressed()
 {
 	redraw();
 }
 class Die //models one single dice cube
-{
-	int numDots, myX, myY
+{   boolean snakeEyes;
+	int myX, myY;
 	Die(int x, int y) //constructor
 	{
 		myX = x;
 		myY = y;
-		numDots =
-	}
+		
+}
 	void roll()
 	{
-		roll();
+		if(Math.random()< .9)
+            {
+            	snakeEyes= true;
+            }
+            else 
+            {
+            	snakeEyes= false;
+             }
+
 		//your code here
 	}
 	void show()
-	{
-      fill(0);
-      ellipse(150,150,25,25);       
-}
-	{   stroke(0);
+	{     
+       stroke(0);
 		fill(250,250,250);
-		rect(100,100,100,100);
+		rect(myX,myY,100,100);
+		   if (snakeEyes == true)
+       {
+       	  ellipse(myX,myY,10,10);
+       }
 	}
-	
-}
+       
+
+
+	}
+
+
