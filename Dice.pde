@@ -92,3 +92,4 @@ class Die
                      ellipse(myX+50,myY+75,20,20);
                      }
 }
+//chickens
