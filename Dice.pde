@@ -14,8 +14,8 @@ void draw()
 		for (int x = 100; x<= 390; x+=130)
      {
      	Kevin = new Die(x,y);
-     	Kevin.show();
      	Kevin.roll();
+     	Kevin.show();
      }
     }
      
@@ -84,9 +84,9 @@ class Die
                      else if(dieNum==6)
                      {
                        fill(0);
-                     ellipse(myX+25,myY+74,20,20);
+                     ellipse(myX+25,myY+75,20,20);
                      ellipse(myX+75,MYy+25,20,20);
-                     ellipse(myX+25,myY+25,20,20);
+                     ellipse(myX+75,myY+25,20,20);
                      ellipse(myX+25,myY+25,20,20);
                      ellipse(myX+50,myY+25,20,20);
                      ellipse(myX+50,myY+75,20,20);
