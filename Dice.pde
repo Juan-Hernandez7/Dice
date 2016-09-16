@@ -40,7 +40,7 @@ class Die
 	{
 		dieNum=(int)(Math.random()*6)+1;
 	}
-	int numDots;
+	
 	void show()
 	{     
        stroke(0);
@@ -80,12 +80,12 @@ class Die
                       ellipse(myX+25,myY+25,20,20);
                       ellipse(myX+75,myY+75,20,20);
                       ellipse(myX+50,myY+50,20,20);
-                    }
+                     }
                      else if(dieNum==6)
                      {
                        fill(0);
                      ellipse(myX+25,myY+75,20,20);
-                     ellipse(myX+75,MYy+25,20,20);
+                     ellipse(myX+75,myY+25,20,20);
                      ellipse(myX+75,myY+25,20,20);
                      ellipse(myX+25,myY+25,20,20);
                      ellipse(myX+50,myY+25,20,20);
